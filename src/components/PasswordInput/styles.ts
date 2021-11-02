@@ -22,7 +22,7 @@ export const IconContainer = styled.View<Props>`
 
      ${({ isFocused, theme }) => isFocused && css`
           border-bottom-width: 2px;
-          border-bottom-color: ${theme.colors.main}
+          border-bottom-color: ${theme.colors.main};
      `}
 `;
 
