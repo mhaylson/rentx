@@ -56,6 +56,7 @@ export function PasswordInput({
                 secureTextEntry={isVisiblePassword}
                 onFocus={handleInputFocused}
                 onBlur={handleInputBlur}
+                autoCorrect={false}
                 {...rest}
             />
             <BorderlessButton onPress={handleVisiblePassword}>
