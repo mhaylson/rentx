@@ -18,7 +18,7 @@ export const IconContainer = styled.View<Props>`
      align-items: center;
      justify-content: center;
      background-color: ${({ theme }) => theme.colors.backgorund_secondary};
-     margin-right: 2px;
+     /* margin-right: 2px; */
 
      ${({ isFocused, theme }) => isFocused && css`
           border-bottom-width: 2px;
