@@ -88,3 +88,11 @@ export const Footer = styled.View`
      justify-content: center;
      padding: 24px 24px ${getBottomSpace() + 24}px;
 `;
+
+export const OfflineInfo = styled.Text`
+     font-family: ${({ theme }) => theme.fonts.secondary_400};
+     font-size: ${RFValue(10)}px;
+     color: ${({ theme }) => theme.colors.main};
+
+     text-align: center;
+`;

@@ -159,7 +159,6 @@ export function Home() {
                                     height={RFValue(12)}
                                 />
                                 {
-                                    isLoading &&
                                     <TotalCars>
                                         {`Total de ${cars?.length} carros`}
                                     </TotalCars>
