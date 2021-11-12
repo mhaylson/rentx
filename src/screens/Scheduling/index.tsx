@@ -88,6 +88,7 @@ export function Scheduling() {
                 translucent={true}
             />
             <Header>
+
                 <BackButton color={theme.colors.shape} onPress={() => { }} />
                 <Title>
                     Escolha uma{`\n`}

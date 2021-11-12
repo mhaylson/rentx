@@ -67,7 +67,11 @@ export function Home() {
     });
 
 
-    function handleCarDetails(car: CarDTO) {
+    function handleCarDetails(car: ModelCar) {
+
+        console.log('### CARRO ###');
+        console.log(car);
+
         navigation.navigate('CarDetails', { car });
     }
 
@@ -91,6 +95,7 @@ export function Home() {
             },
             pushChanges: async ({ changes }) => { //enviar para o backend as mudanças realizadas no app
                 const user = changes.users;
+                console.log(user);
                 await api.post('/users/sync', user).catch(console.log);
             }
         });

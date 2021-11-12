@@ -12,7 +12,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
     width: 100%;
-    height: 40%;
+    height: 325px;
 
     /* align-items: center; */
     justify-content: center;
@@ -26,13 +26,14 @@ export const Header = styled.View`
 
 export const Title = styled.Text`
     color: ${({ theme }) => theme.colors.shape};
-    font-size: ${RFValue(25)}px;
+    font-size: ${RFValue(34)}px;
     font-family: ${({ theme }) => theme.fonts.secondary_600};
 
     margin-top: 24px;
 `;
 
 export const RentalPeriod = styled.View`
+    width: 100%;
     margin: 32px 0px;
     flex-direction: row;
     align-items: center;
@@ -59,7 +60,7 @@ export const DateValue = styled.Text<DateValueProps>`
     ${({ selected }) => !selected && css`
         border-bottom-width: 1px;
         border-bottom-color: ${({ theme }) => theme.colors.text};
-
+        padding-bottom: 5px;
     `}
 `;
 

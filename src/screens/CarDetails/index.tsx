@@ -48,7 +48,6 @@ export function CarDetails() {
 
     const netInfo = useNetInfo();
     const navigation = useNavigation();
-
     const route = useRoute();
     const { car } = route.params as Params;
 
